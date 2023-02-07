@@ -1,0 +1,6 @@
+_vscode/*
+!.vscode/setting.json
+!.vscode/tasks.jason
+!.vscode/launch.jason
+!.vscode/extensions.jason
+!.vscode/*.code-snippets
