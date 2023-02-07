@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Search</title>
+</head>
+<div class="searh">
+  <h1>Поиск</h1>
+  <div class="characteristics">
+    <div class="body type">
+      <label class="label">Тип кузова:</label>
+      <form>
+        <input type="checkbox" id="sedan">
+        <label> Седан</label>
+        <input type="checkbox" id="hatchback">
+        <label>Хэтчбек</label>
+        <input type="checkbox" id="station wagon">
+        <label>Универсал</label>
+        <input type="checkbox" id="minivan">
+        <label>Минивен</label>
+      </form>
+      <form>
+        <input type="checkbox" id="crossover">
+        <label>Внедорожник (Кросовер)</label>
+        <input type="checkbox" id="coupe">
+        <label>Купе</label>
+        <input type="checkbox" id="cabriolet">
+        <label>Кабриолет</label>
+        <input type="checkbox" id="pickup">
+        <label>Пикап</label>
+      </form>
+    </div>
+  </div>
+  <br>
+  <div class="car brand">
+    <label class="label">Марка автомобиля</label>
+    <select>
+      <option value="Brand selection">Выберите марку авто</option>
+      <option value="BMW">BMW</option>
+      <option value="Citroen">Citroen</option>
+      <option value="Lexus">Lexus</option>
+      <option value="Mazda">Mazda</option>
+      <option value="Mercedes-Benz">Mercedes-Benz</option>
+      <option value="Mini cooper">Mini cooper</option>
+      <option value="Mitsubishi">Mitsubishi</option>
+      <option value="Opel">Opel</option>
+      <option value="Peugeot">Peugeot</option>
+      <option value="Porsche">Porsche</option>
+      <option value="Renault">Renault</option>
+      <option value="Rolls-Royce">Rolls-Royce</option>
+      <option value="Seat">Seat</option>
+      <option value="Skoda">Skoda</option>
+      <option value="Suzuki">Suzuki</option>
+      <option value="Tesla">Tesla</option>
+      <option value="Toyota">Toyota</option>
+    </select>
+  </div>
+  <br>
+  <div class="contry">
+    <label class="label">Страна производитель</label>
+    <select>
+      <option value="not set">Не задана</option>
+      <option value="Germany">Германия</option>
+      <option value="France">Франция</option>
+      <option value="Japan">Япония</option>
+      <option value="United Kingdom">Великобритания</option>
+      <option value="Spain">Испания</option>
+      <option value="Czech">Чехия</option>
+      <option value="USA">США</option>
+    </select>
+  </div>
+  <hr>
+  <div class="Price">
+    <label class="label">Стоимость</label>
+    <input type="number" placeholder="От">
+    <input type="number" placeholder="До">
+    <select name="Currency">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="UAH">UAH</option>
+    </select>
+  </div>
+  <br>
+  <div class="checkbox">
+    <input type="checkbox" name="pdv">
+    <label>Цена с НДС</label>
+  </div>
+  <div>
+    <input type="checkbox" name="auction">
+    <label for="">Возможен торг</label>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" name="exchange">
+    <label>Обмен</label>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" name="payment in installments">
+    <label>Оплата частями</label>
+  </div>
+  <hr>
+  <div>
+    <label class="label">Год выпуска</label>
+    <select name="from" id="at_year-from">
+      <option value="0">Год от</option>
+      <option value="2023">2023</option>
+      <option value="2022">2022</option>
+      <option value="2021">2021</option>
+      <option value="2020">2020</option>
+      <option value="2018">2019</option>
+      <option value="2018">2018</option>
+      <option value="2017">2017</option>
+      <option value="2016">2016</option>
+      <option value="2015">2015</option>
+      <option value="2014">2014</option>
+      <option value="2013">2013</option>
+      <option value="2012">2012</option>
+      <option value="2011">2011</option>
+      <option value="2010">2010</option>
+      <option value="2009">2009</option>
+      <option value="2008">2008</option>
+      <option value="2007">2007</option>
+      <option value="2006">2006</option>
+      <option value="2005">2005</option>
+      <option value="2004">2004</option>
+      <option value="2003">2003</option>
+      <option value="2002">2002</option>
+      <option value="2001">2001</option>
+      <option value="2000">2000</option>
+      <option value="1999">1999</option>
+      <option value="1998">1998</option>
+      <option value="1997">1997</option>
+      <option value="1996">1996</option>
+      <option value="1995">1995</option>
+      <option value="1994">1994</option>
+      <option value="1993">1993</option>
+      <option value="1992">1992</option>
+      <option value="1991">1991</option>
+      <option value="1990">1990</option>
+      <option value="1989">1989</option>
+      <option value="1988">1988</option>
+      <option value="1987">1987</option>
+      <option value="1986">1986</option>
+      <option value="1985">1985</option>
+      <option value="1984">1984</option>
+      <option value="1983">1983</option>
+      <option value="1982">1982</option>
+      <option value="1981">1981</option>
+      <option value="1980">1980</option>
+      <option value="1979">1979</option>
+      <option value="1978">1978</option>
+      <option value="1977">1977</option>
+    </select>
+    <select name="from" id="at_year-before">
+      <option value="0">Год до</option>
+      <option value="2023">2023</option>
+      <option value="2022">2022</option>
+      <option value="2021">2021</option>
+      <option value="2020">2020</option>
+      <option value="2018">2019</option>
+      <option value="2018">2018</option>
+      <option value="2017">2017</option>
+      <option value="2016">2016</option>
+      <option value="2015">2015</option>
+      <option value="2014">2014</option>
+      <option value="2013">2013</option>
+      <option value="2012">2012</option>
+      <option value="2011">2011</option>
+      <option value="2010">2010</option>
+      <option value="2009">2009</option>
+      <option value="2008">2008</option>
+      <option value="2007">2007</option>
+      <option value="2006">2006</option>
+      <option value="2005">2005</option>
+      <option value="2004">2004</option>
+      <option value="2003">2003</option>
+      <option value="2002">2002</option>
+      <option value="2001">2001</option>
+      <option value="2000">2000</option>
+      <option value="1999">1999</option>
+      <option value="1998">1998</option>
+      <option value="1997">1997</option>
+      <option value="1996">1996</option>
+      <option value="1995">1995</option>
+      <option value="1994">1994</option>
+      <option value="1993">1993</option>
+      <option value="1992">1992</option>
+      <option value="1991">1991</option>
+      <option value="1990">1990</option>
+      <option value="1989">1989</option>
+      <option value="1988">1988</option>
+      <option value="1987">1987</option>
+      <option value="1986">1986</option>
+      <option value="1985">1985</option>
+      <option value="1984">1984</option>
+      <option value="1983">1983</option>
+      <option value="1982">1982</option>
+      <option value="1981">1981</option>
+      <option value="1980">1980</option>
+      <option value="1979">1979</option>
+      <option value="1978">1978</option>
+      <option value="1977">1977</option>
+    </select>
+  </div>
+  <br>
+  <h3> Состояние</h3>
+  <div class="state">
+    <label for="Participation in an accident">Участие в ДТП</label>
+    <select>
+      <option value="not set">Не задано</option>
+      <option value="After the accident">После ДТП</option>
+      <option value="Was not in an accident">Не был в ДТП</option>
+    </select>
+    <label for="TechnicalCondition">Техническое состояние</label>
+    <select>
+      <option value="not set">Не задано</option>
+      <option value="Without damage">Без повреждений</option>
+      <option value="After overhaul">После капитального ремонта</option>
+      <option value="minor damage">Мелкие повреждения</option>
+      <option value="For parts">Не на ходу (на запчасти)</option>
+    </select>
+  </div>
+  <br>
+  <div class="not cleared">
+    <label class="label">Не растаможенные</label>
+    <div class="indent">
+      <input id="custom-0" type="radio" value="-1" name="not cleared" checked="checked">
+      <label for="custom-0" data-type="radio">Все</label>
+      <input id="custom-1" type="radio" value="0" name="not cleared">
+      <label for="custom-1" data-type="radio">Показать</label>
+      <input id="custom-2" type="radio" value="1" name="not cleared">
+      <label for="custom-2" data-type="radio">Скрыть</label>
+    </div>
+  </div>
+  <br>
+  <div class="not credit">
+    <label class="label">В кредите</label>
+    <div class="credit-lab">
+      <input id="credit-0" type="radio" value="-1" name="not credit" checked="checked">
+      <label for="credit-0" data-type="radio">Все</label>
+      <input id="credit-1" type="radio" value="0" name="not credit">
+      <label for="credin-1" data-type="radio">Показать</label>
+      <input id="credit-2" type="radio" value="1" name="not credit">
+      <label for="credit-2" data-type="radio">Скрыть</label>
+    </div>
+  </div>
+  <br>
+  <div class="confiscated">
+    <label class="label">Конфискат</label>
+    <div class="confiscated-lab">
+      <input id="confiscated-0" type="radio" value="-1" name="confiscated" checked="checked">
+      <label for="confiscated-0" data-type="radio">Все</label>
+      <input id="confiscated-1" type="radio" value="0" name="confiscated">
+      <label for="confiscated-1" data-type="radio">Показать</label>
+      <input id="confiscated-2" type="radio" value="1" name="confiscated">
+      <label for="confiscated-2" data-type="radio">Скрыть</label>
+    </div>
+  </div>
+  <hr>
+  <h3>Технические характеристики</h3>
+  <div class="Technical characteristics">
+    <label class="label">Вид топлива</label>
+    <div class="Type of fuel">
+      <input id="petrol" type="checkbox" name="petrol">
+      <label for="petrol">Бензин</label>
+      <input id="Diesel" type="checkbox" name="Diesel">
+      <label for="Diesel">Дизель</label>
+      <input id="gaz" type="checkbox" name="gaz">
+      <label for="gaz">Газ</label>
+      <input id="gaz/petrol" type="checkbox" name="gaz">
+      <label for="gaz/petrol">Газ/Бензин</label>
+      <input id="hybrid" type="checkbox" name="hybrid">
+      <label for="hybrid">Гибрид</label>
+      <input id="electro" type="checkbox" name="electro">
+      <label for="electro">Электро</label>
+      <input id="gaz/Methane" type="checkbox" name="gaz/Methane">
+      <label for="gaz/Methane">ГазМетан</label>
+    </div>
+    <br>
+    <div class="Gearbox type">
+      <label class="label">Тип коробки передач</label>
+      <div class="Geartbox">
+        <input id="Mechanics" type="checkbox" name="Mechanics">
+        <label for="Mechanics">Механика (ручная)</label>
+        <input id="automat" type="checkbox" name="automat">
+        <label for="automat">Автомат</label>
+        <input id="tiptronic" type="checkbox" name="tiptronic">
+        <label for="tiptronic">Типтроник</label>
+        <input id="robot" type="checkbox" name="robot">
+        <label for="robot">Робот</label>
+        <input id="variator" type="checkbox" name="varianor">
+        <label for="variator">Вариатор</label>
+      </div>
+    </div>
+    <br>
+    <div class="color">
+      <label class="label">Цвет автомобиля</label>
+      <select>
+        <option value="color car">Выберите цвет автомобиля</option>
+        <option value="beige">Бежевый</option>
+        <option value="black">Черный</option>
+        <option value="dlue">Синий</option>
+        <option value="brown">Коричневый </option>
+        <option value="green">Зеленый</option>
+        <option value="gray">Серый</option>
+        <option value="orange">Оранжевый</option>
+        <option value="purple">Фиолетовый</option>
+        <option value="red">Красный</option>
+        <option value="white">Белый</option>
+        <option value="yellow">Желтый</option>
+        <option value="metallic">Металик</option>
+      </select>
+    </div>
+    <br>
+    <div class="Salon and comfort">
+      <label class="label">Салон и комфорт</label>
+      <div class="comfort">
+        <form>
+          <input id="Luke" type="checkbox" name="Luke">
+          <label for="Luke">Люк вентиляционный</label>
+          <input id="leather interior" type="checkbox" name="leather interior">
+          <label for="leather interior">Кожаный салон</label>
+          <input id="Cruise control" type="checkbox" name="Cruise control">
+          <label for="Cruise control">Круиз контроль</label>
+        </form>
+        <form>
+          <input id="Power mirrors" type="checkbox" name="Power mirrors">
+          <label for="Power mirrors">Электропривод зеркал</label>
+          <input id="Glass heating" type="checkbox" name="Glass heating">
+          <label for="Glass heating">Обогрев лобового стекла</label>
+          <input id="heated seats" type="checkbox" name="heated seats">
+          <label for="heated seats">Подогрев сидений</label>
+          <input id="Rain sensor" type="checkbox" name="Rain sensor">
+          <label for="Rain sensor">Датчик дождя</label>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
+<footer>
+  <br>
+</footer>
+
+</html>
